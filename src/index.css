@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Work+Sans:wght@300;400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  /* background-color: #000000; */
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+:root {
+  --black-color:#000000;
+  --dark-color:#1a1d20;
+  --dark-primary:#1c1c1c;
+  --white-color:#ffffff;
+  --button-font-color:#484848;
+  --primary-color:#c6c6c6;
+  --scrollbar-color:#29a9fd;  
+  --scrollbar-hover-color:#29a9d5;  
+  --link-hover-color:#3498db;
+  --pink-color:#c850c0;
+  --active-navbar-color:#565387;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+/* // FOR scrollbar */
+::-webkit-scrollbar{
+    width: .5rem;
+}
+::-webkit-scrollbar-track{
+    background-color:var(--white-color) ;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--scrollbar-color);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: var(--scrollbar-hover-color);
+}
+.navbar {
+  background-color: var(--white-color) !important;
+}
+
+.navbar-brand {
+  font-size: 1.9rem;
+  color: var(--active-navbar-color);
+}
+
+.navbar-brand img {
+  width: 150px;
+  object-fit: cover;
+}
+
+.navbar a {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.active {
+  font-weight: bold;
+  border-bottom: 1px solid #565387;
+}
+
+.navbar a:hover {
+  color: var(--link-hover-color) !important;
+}
+
+@media (max-width:991px) {
+  #header {
+    margin-top: 0 !important;
+    margin-bottom: 110px !important;
+  }
+  .navbar ul li a {
+    text-align: center;
+  }
+
+  .navbar_brand {
+    font-size: 1.5rem !important;
+  }
+  .active {
+    font-weight: bold;
+    border-bottom: none;
+  }
+}
+
+/*=============================================================================================================
+
+#Main Landing section
+
+==============================================================================================================*/
+
+#header {
+  width: 100%;
+  height: 80vh;
+  margin-top: 70px;
+  padding-bottom: 20px;
+}
+
+#header h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--black-color);
+}
+
+#header .brand-name {
+  color: var(--link-hover-color);
+}
+
+#header h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#header .btn-get-started {
+  color: var(--button-font-color);
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: var(--link-hover-color);
+  border: 2px solid var(--link-hover-color);
+  text-decoration: none;
+}
+
+#header .btn-get-started:hover {
+  background: var(--link-hover-color);
+  color: var(--white-color);
+}
+
+#header-img {
+  text-align: right;
+}
+
+#header .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/*=============================================================================================================
+
+#no need of thes css
+
+==============================================================================================================*/
+
