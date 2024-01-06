@@ -1,5 +1,5 @@
 import React from 'react';
-import Common from '../Common';
+import Common from './Common';
 import homeImg from '../images/heroSection.jpg';
 import Service from './Service';
 import Contact from './Contact';

@@ -1,12 +1,12 @@
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './ReactMenu/Home';
-import About from './ReactMenu/About';
-import Service from './ReactMenu/Service';
-import Contact from './ReactMenu/Contact';
-import Navbar from './Navbar';
-import Footer from "./Footer";
+import Home from './Comonents/Home';
+import About from './Comonents/About';
+import Service from './Comonents/Service';
+import Contact from './Comonents/Contact';
+import Navbar from './Comonents/Navbar';
+import Footer from "./Comonents/Footer";
 import aboutIMG from '../src/images/testing.jpg';
 
 function App() {
