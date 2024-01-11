@@ -133,6 +133,7 @@ body {
 
 #header-img {
   text-align: right;
+  mix-blend-mode: color-burn;
 }
 
 #header .animated {
